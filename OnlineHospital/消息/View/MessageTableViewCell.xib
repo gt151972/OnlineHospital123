@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MessageTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="144"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="naV-Pm-9eb">
+                        <rect key="frame" x="12" y="0.0" width="296" height="136"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B4G-Fi-DI4">
+                                <rect key="frame" x="20" y="90" width="256" height="1"/>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="fBk-PL-B7f"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xdw-mN-bM5">
+                                <rect key="frame" x="25" y="101" width="108" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <state key="normal" title="报名成功提醒" image="message_bmcg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.02.04  15:40" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SI8-1x-Qrl">
+                                <rect key="frame" x="167" y="104.5" width="104" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.74509803919999995" green="0.74509803919999995" blue="0.74509803919999995" alpha="0.84705882349999995" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTC-UE-LNI">
+                                <rect key="frame" x="133" y="95" width="6" height="6"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="mIS-uX-MAm"/>
+                                    <constraint firstAttribute="width" constant="6" id="uGi-hQ-Tc3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRidus">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csE-cg-PSZ">
+                                <rect key="frame" x="25" y="27" width="246" height="55"/>
+                                <string key="text">您的预约问诊“医生，皮肤上起红点点，但是……”已被医生确认!您的预约问诊“医生，皮肤上起红点点，但是……”
+已被医生确认!</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SI8-1x-Qrl" secondAttribute="trailing" constant="25" id="25n-4E-Jrz"/>
+                            <constraint firstItem="csE-cg-PSZ" firstAttribute="leading" secondItem="naV-Pm-9eb" secondAttribute="leading" constant="25" id="3Fa-59-lT2"/>
+                            <constraint firstAttribute="trailing" secondItem="csE-cg-PSZ" secondAttribute="trailing" constant="25" id="5xX-Q7-SIg"/>
+                            <constraint firstItem="Xdw-mN-bM5" firstAttribute="leading" secondItem="naV-Pm-9eb" secondAttribute="leading" constant="25" id="AAq-cc-Zve"/>
+                            <constraint firstItem="SI8-1x-Qrl" firstAttribute="centerY" secondItem="Xdw-mN-bM5" secondAttribute="centerY" id="SeK-r9-nGL"/>
+                            <constraint firstItem="Xdw-mN-bM5" firstAttribute="trailing" secondItem="HTC-UE-LNI" secondAttribute="leading" id="bG6-tu-gi1"/>
+                            <constraint firstItem="B4G-Fi-DI4" firstAttribute="top" secondItem="csE-cg-PSZ" secondAttribute="bottom" constant="10" id="brV-MN-F0v"/>
+                            <constraint firstItem="Xdw-mN-bM5" firstAttribute="top" secondItem="B4G-Fi-DI4" secondAttribute="bottom" constant="10" id="bzw-90-eK9"/>
+                            <constraint firstAttribute="bottom" secondItem="SI8-1x-Qrl" secondAttribute="bottom" constant="16.5" id="cpP-sT-LxZ"/>
+                            <constraint firstAttribute="trailing" secondItem="B4G-Fi-DI4" secondAttribute="trailing" constant="20" id="cvO-I7-SDm"/>
+                            <constraint firstItem="B4G-Fi-DI4" firstAttribute="leading" secondItem="naV-Pm-9eb" secondAttribute="leading" constant="20" id="ddk-jC-amz"/>
+                            <constraint firstItem="HTC-UE-LNI" firstAttribute="top" secondItem="B4G-Fi-DI4" secondAttribute="bottom" constant="4" id="nfH-sk-385"/>
+                            <constraint firstAttribute="bottom" secondItem="Xdw-mN-bM5" secondAttribute="bottom" constant="13" id="ooe-un-XZL"/>
+                            <constraint firstItem="Xdw-mN-bM5" firstAttribute="top" secondItem="HTC-UE-LNI" secondAttribute="bottom" id="pAp-Cu-pHL"/>
+                            <constraint firstItem="csE-cg-PSZ" firstAttribute="top" secondItem="naV-Pm-9eb" secondAttribute="top" constant="25" id="qkx-p5-CVc"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="naV-Pm-9eb" secondAttribute="trailing" constant="12" id="2Ch-0O-Zpg"/>
+                    <constraint firstAttribute="bottom" secondItem="naV-Pm-9eb" secondAttribute="bottom" constant="8" id="5Jd-hl-7LC"/>
+                    <constraint firstItem="naV-Pm-9eb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="Uov-ih-aQP"/>
+                    <constraint firstItem="naV-Pm-9eb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cX0-go-gc3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bgView" destination="naV-Pm-9eb" id="CCe-xe-muo"/>
+                <outlet property="btnState" destination="Xdw-mN-bM5" id="ey0-8h-jU8"/>
+                <outlet property="labContent" destination="csE-cg-PSZ" id="wZe-BZ-g4F"/>
+                <outlet property="labDate" destination="SI8-1x-Qrl" id="TPa-lV-nde"/>
+                <outlet property="readView" destination="HTC-UE-LNI" id="JcT-gR-sUZ"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="154"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="message_bmcg" width="22" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

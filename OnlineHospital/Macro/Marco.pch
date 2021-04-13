@@ -1,0 +1,159 @@
+//
+//  Marco.pch
+//  OnlineHospital
+//
+//  Created by 高天的Mac on 2020/8/7.
+//  Copyright © 2020 高天的Mac. All rights reserved.
+//
+
+#ifndef Marco_pch
+#define Marco_pch
+
+/**  地址文件 */
+#import "Address.h"
+
+/**  第三方头文件 */
+#import "Header.h"
+
+
+/**  本地存储字段 */
+
+
+/**  取本地图片 */
+
+
+/* 屏幕尺寸 */
+#define Screen_W   [UIScreen mainScreen].bounds.size.width
+#define Screen_H   [UIScreen mainScreen].bounds.size.height
+#define ContentWEITH self.contentView.frame.size.width
+#define ContentHEIGHT self.contentView.frame.size.height
+#define LGPercent  (Screen_W/375.0)
+#define SafeAreaTopHeight (IPHONE_X ? 88 : 64)
+
+// status bar height.
+#define  kStatusBarHeight      (IPHONE_X ? 44.f : 20.f)
+
+// Navigation bar height.
+#define  kNavigationBarHeight  44.f
+
+// Tabbar height.
+#define  kTabbarHeight        (IPHONE_X ? (49.f+34.f) : 49.f)
+
+// Tabbar safe bottom margin.
+#define  kTabbarSafeBottomMargin        (IPHONE_X ? 34.f : 0.f)
+
+// Status bar & navigation bar height.
+#define  kStatusBarAndNavigationBarHeight  (IPHONE_X ? 88.f : 64.f)
+
+// 判断是否为iPhone X 系列  这样写消除了在Xcode10上的警告。
+//#define IPHONE_X \
+//({BOOL isPhoneX = NO;\
+//if (@available(iOS 11.0, *)) {\
+//isPhoneX = [[UIApplication sharedApplication] delegate].window.safeAreaInsets.bottom > 0.0;\
+//}\
+//(isPhoneX);})
+#define  IPHONE_X  ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone && MAX([UIScreen mainScreen].bounds.size.height,[UIScreen mainScreen].bounds.size.width) >= 812)
+
+
+#define SafeAreaBottomHeight (IPHONE_X ? (49 + 34) : 49)
+
+
+
+#define kMaxX(X) CGRectGetMaxX(X)
+#define kMaxY(Y) CGRectGetMaxY(Y)
+#define kMinX(X) CGRectGetMinY(X)
+#define kMinY(Y) CGRectGetMinX(Y)
+
+#define dateView_W  (Screen_W - 100.0*LGPercent) //线下预约咨询  选择时间段view的宽
+
+
+#define defaultParm (@"token":kToken)
+
+#define viewPix(a) ((a)/375.0*maxScreenWidth)
+
+#define spacePix(a,b) (([UIScreen mainScreen].bounds.size.width - viewPix(b))/(375-b)*(a))
+
+#define maxScreenHeight ([UIScreen mainScreen].bounds.size.height>[UIScreen mainScreen].bounds.size.width?[UIScreen mainScreen].bounds.size.height:[UIScreen mainScreen].bounds.size.width)
+#define maxScreenWidth ([UIScreen mainScreen].bounds.size.height<[UIScreen mainScreen].bounds.size.width?[UIScreen mainScreen].bounds.size.height:[UIScreen mainScreen].bounds.size.width)
+
+#define global_quque    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+#define main_queue      dispatch_get_main_queue()
+
+/* 颜色 */
+#define LGStringColor(string)   [UIColor colorWithString:string]
+#define RGBAColor(r,g,b,a)      [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
+#define RGBColor(r, g, b)       RGBAColor(r,g,b,1.0)
+//十六进制颜色
+#define kRGB(R,G,B) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1]
+
+//背景色
+#define BG_COLOR [UIColor colorWithRed:246/255.0 green:246/255.0 blue:246/255.0 alpha:1]
+#define BG_COLOR_WHITE [UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1]
+//字体色
+#define TEXT_COLOR_DETAIL [UIColor colorWithRed:190/255.0 green:190/255.0 blue:190/255.0 alpha:1]
+#define TEXT_COLOR_MAIN [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:1]
+#define TEXT_COLOR_GLOD [UIColor colorWithRed:63/255.0 green:36/255.0 blue:27/255.0 alpha:1]
+#define TEXT_COLOR_GLOD2 [UIColor colorWithRed:227/255.0 green:181/255.0 blue:147/255.0 alpha:1]
+//主色
+#define BLUE_COLOR_MAIN [UIColor colorWithRed:52/255.0 green:108/255.0 blue:255/255.0 alpha:1]
+#define GREEN_COLOR_MAIN [UIColor colorWithRed:3/255.0 green:197/255.0 blue:79/255.0 alpha:1]
+#define ORANGE_COLOR_MAIN [UIColor colorWithRed:255/255.0 green:101/255.0 blue:0/255.0 alpha:1]
+//圆角
+#define REDIUS 10
+
+//通知
+#define UserNotificationAlipayOrWechatSuccess @"UserNotificationAlipayOrWechatSuccess"
+#define UserNotificationAlipayOrWechatFail @"UserNotificationAlipayOrWechatFail"
+#define UserNotificationJumpLogin @"UserNotificationJumpLogin"//跳转登录
+#define UserNotificationCloseLoginView @"UserNotificationCloseLoginView"
+/*  字体大小 */
+#define LGFont(a)  [UIFont systemFontOfSize:LGPercent*a]
+
+/* 占位图 */
+#define placeHoldC [UIImage imageNamed:@""]
+
+#define placeHoldF [UIImage imageNamed:@""]
+
+
+#define WS __weak typeof(self) weakSelf = self;
+
+
+/* log输出 */
+#define LGLogFunction       NSLog(@"%s",__func__)
+#ifdef  DEBUG
+#define LGLog(...)          NSLog(__VA_ARGS__)
+#else
+#define LGLog(...)
+#endif
+
+/**  本地存储字段 */
+#define kVersion     [[NSUserDefaults standardUserDefaults] objectForKey:@"version"]
+#define kLoginToken  [[NSUserDefaults standardUserDefaults] objectForKey:@"logintoken"]
+#define kIsLogin     [[NSUserDefaults standardUserDefaults] objectForKey:@"islogin"]
+#define kToken       [[NSUserDefaults standardUserDefaults] objectForKey:@"token"]
+#define kUserId      [[NSUserDefaults standardUserDefaults] objectForKey:@"userid"]
+#define kRongkey     [[NSUserDefaults standardUserDefaults] objectForKey:@"rongkey"]
+#define kRongToken     [[NSUserDefaults standardUserDefaults] objectForKey:@"rongtoken"]
+#define kRyuserId    [[NSUserDefaults standardUserDefaults] objectForKey:@"ryuserId"]
+#define kRCName      [[NSUserDefaults standardUserDefaults] objectForKey:@"RCName"]
+#define kRCHeadImage [[NSUserDefaults standardUserDefaults] objectForKey:@"RCHeadImage"]
+#define kVnumber    [[NSUserDefaults standardUserDefaults] objectForKey:@"vnumber"]
+
+//竖屏幕宽高
+#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
+#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
+
+//设备型号
+#define iPhone4 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6PlusScale ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//导航栏
+#define StatusBarHeight (iPhoneX ? 44.f : 20.f)
+#define StatusBarAndNavigationBarHeight (iPhoneX ? 88.f : 64.f)
+#define TabbarHeight (iPhoneX ? (49.f + 34.f) : (49.f))
+#define BottomSafeAreaHeight (iPhoneX ? (34.f) : (0.f))
+#endif /* Marco_pch */

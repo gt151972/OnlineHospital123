@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MineFlowerViewController">
+            <connections>
+                <outlet property="btnadd" destination="haJ-B5-NKz" id="N6K-j3-pH2"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_flower" translatesAutoresizingMaskIntoConstraints="NO" id="Pxl-4d-Wmb">
+                    <rect key="frame" x="143.5" y="190" width="127" height="143"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="middleTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5CT-pX-xrb">
+                    <rect key="frame" x="180" y="307" width="54" height="60"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您当前花朵数量" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCH-4M-8dJ">
+                    <rect key="frame" x="157" y="382" width="100" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WK3-ro-bnE">
+                    <rect key="frame" x="12" y="758" width="390" height="110"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mine_flower_red" translatesAutoresizingMaskIntoConstraints="NO" id="7Wn-kN-6oT">
+                            <rect key="frame" x="14" y="17" width="16" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="16" id="i3f-bB-zcN"/>
+                                <constraint firstAttribute="height" constant="16" id="mI7-pu-ldC"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="花朵明细" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n1E-OV-ftj">
+                            <rect key="frame" x="38" y="15" width="72" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="CNH-9M-CH3"/>
+                                <constraint firstAttribute="width" constant="72" id="YXh-0j-z8c"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NNf-AQ-qQa">
+                            <rect key="frame" x="14" y="43" width="362" height="1"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="826-xV-Hpn"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完成注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="467-jm-GOL">
+                            <rect key="frame" x="14" y="74" width="58" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="4I9-AV-4aw"/>
+                                <constraint firstAttribute="width" constant="58" id="m8D-m2-aTH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haJ-B5-NKz">
+                            <rect key="frame" x="303" y="69.5" width="64" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="blJ-XR-O58"/>
+                                <constraint firstAttribute="height" constant="26" id="e6i-MI-O4Y"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="+10" image="mine_flower_red">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="467-jm-GOL" firstAttribute="top" secondItem="NNf-AQ-qQa" secondAttribute="bottom" constant="30" id="0QH-mp-xeB"/>
+                        <constraint firstItem="467-jm-GOL" firstAttribute="leading" secondItem="WK3-ro-bnE" secondAttribute="leading" constant="14" id="0pB-DD-sX4"/>
+                        <constraint firstAttribute="trailing" secondItem="haJ-B5-NKz" secondAttribute="trailing" constant="23" id="26r-oT-4s4"/>
+                        <constraint firstItem="NNf-AQ-qQa" firstAttribute="leading" secondItem="WK3-ro-bnE" secondAttribute="leading" constant="14" id="5dY-UD-6kQ"/>
+                        <constraint firstAttribute="height" constant="110" id="BV0-VU-17Q"/>
+                        <constraint firstItem="n1E-OV-ftj" firstAttribute="leading" secondItem="7Wn-kN-6oT" secondAttribute="trailing" constant="8" id="F91-K2-FYX"/>
+                        <constraint firstAttribute="trailing" secondItem="NNf-AQ-qQa" secondAttribute="trailing" constant="14" id="G4L-jl-Kbn"/>
+                        <constraint firstItem="haJ-B5-NKz" firstAttribute="centerY" secondItem="467-jm-GOL" secondAttribute="centerY" id="TB0-xO-FA4"/>
+                        <constraint firstItem="7Wn-kN-6oT" firstAttribute="leading" secondItem="WK3-ro-bnE" secondAttribute="leading" constant="14" id="gl4-ld-yUw"/>
+                        <constraint firstItem="n1E-OV-ftj" firstAttribute="centerY" secondItem="7Wn-kN-6oT" secondAttribute="centerY" id="i3h-wh-0fa"/>
+                        <constraint firstItem="NNf-AQ-qQa" firstAttribute="top" secondItem="n1E-OV-ftj" secondAttribute="bottom" constant="8" id="kGW-bK-k9P"/>
+                        <constraint firstItem="7Wn-kN-6oT" firstAttribute="top" secondItem="WK3-ro-bnE" secondAttribute="top" constant="17" id="lTX-4v-m0T"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRidus">
+                            <real key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="BCH-4M-8dJ" firstAttribute="top" secondItem="5CT-pX-xrb" secondAttribute="bottom" constant="15" id="9tW-fy-nMc"/>
+                <constraint firstAttribute="bottom" secondItem="WK3-ro-bnE" secondAttribute="bottom" constant="28" id="9vS-le-IZC"/>
+                <constraint firstItem="BCH-4M-8dJ" firstAttribute="centerX" secondItem="5CT-pX-xrb" secondAttribute="centerX" id="BhD-bi-ymx"/>
+                <constraint firstItem="Pxl-4d-Wmb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="C2b-ml-A2P"/>
+                <constraint firstItem="Pxl-4d-Wmb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="146" id="EWo-g1-B8m"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WK3-ro-bnE" secondAttribute="trailing" constant="12" id="Mss-Qh-dbu"/>
+                <constraint firstItem="WK3-ro-bnE" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="12" id="RE6-bw-2Eb"/>
+                <constraint firstItem="5CT-pX-xrb" firstAttribute="centerX" secondItem="Pxl-4d-Wmb" secondAttribute="centerX" id="jr1-4i-ttj"/>
+                <constraint firstItem="5CT-pX-xrb" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="263" id="tTG-4n-yCv"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="131.8840579710145" y="153.34821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mine_flower" width="127" height="143"/>
+        <image name="mine_flower_red" width="18" height="16"/>
+    </resources>
+</document>

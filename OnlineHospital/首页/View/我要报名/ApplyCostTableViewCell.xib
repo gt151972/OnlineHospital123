@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ApplyCostTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="97"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apply_kb" translatesAutoresizingMaskIntoConstraints="NO" id="ZjM-E4-4xm">
+                        <rect key="frame" x="20" y="65" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="Udy-Jj-wy2"/>
+                            <constraint firstAttribute="width" constant="12" id="dlw-6F-uGa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开播时间：2020.07.01 15:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mg5-DQ-vSZ">
+                        <rect key="frame" x="37" y="63.5" width="157.5" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apply_pt" translatesAutoresizingMaskIntoConstraints="NO" id="0r3-D2-grp">
+                        <rect key="frame" x="20" y="43" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="AX7-I5-TH8"/>
+                            <constraint firstAttribute="width" constant="12" id="xjG-tl-Yd8"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="报名旁听费用：¥10.00元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdA-3D-5Am">
+                        <rect key="frame" x="37" y="41.5" width="137" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apply_hd" translatesAutoresizingMaskIntoConstraints="NO" id="ypa-qb-ICs">
+                        <rect key="frame" x="20" y="21" width="12" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="98l-81-4hm"/>
+                            <constraint firstAttribute="height" constant="12" id="IL6-YS-gq7"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="报名互动费用：¥10.00元" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gvy-Tx-PRn">
+                        <rect key="frame" x="37" y="19.5" width="137" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ZjM-E4-4xm" firstAttribute="top" secondItem="0r3-D2-grp" secondAttribute="bottom" constant="10" id="87n-fJ-rpn"/>
+                    <constraint firstItem="ypa-qb-ICs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="8d8-zA-22P"/>
+                    <constraint firstItem="ZjM-E4-4xm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="BUW-gK-pUd"/>
+                    <constraint firstItem="0r3-D2-grp" firstAttribute="top" secondItem="ypa-qb-ICs" secondAttribute="bottom" constant="10" id="JHs-vo-JKQ"/>
+                    <constraint firstItem="TdA-3D-5Am" firstAttribute="centerY" secondItem="0r3-D2-grp" secondAttribute="centerY" id="L53-h4-QgD"/>
+                    <constraint firstItem="Mg5-DQ-vSZ" firstAttribute="leading" secondItem="ZjM-E4-4xm" secondAttribute="trailing" constant="5" id="Mpf-tm-jRf"/>
+                    <constraint firstItem="Gvy-Tx-PRn" firstAttribute="centerY" secondItem="ypa-qb-ICs" secondAttribute="centerY" id="R6I-sW-jk2"/>
+                    <constraint firstItem="0r3-D2-grp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="RMN-X9-iDT"/>
+                    <constraint firstAttribute="bottom" secondItem="ZjM-E4-4xm" secondAttribute="bottom" constant="20" id="U1E-7K-fl6"/>
+                    <constraint firstItem="Gvy-Tx-PRn" firstAttribute="leading" secondItem="ypa-qb-ICs" secondAttribute="trailing" constant="5" id="lTr-ZW-ZXU"/>
+                    <constraint firstItem="Mg5-DQ-vSZ" firstAttribute="centerY" secondItem="ZjM-E4-4xm" secondAttribute="centerY" id="nXP-Uj-YHw"/>
+                    <constraint firstItem="TdA-3D-5Am" firstAttribute="leading" secondItem="0r3-D2-grp" secondAttribute="trailing" constant="5" id="wrx-C1-kQg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="image1" destination="ZjM-E4-4xm" id="OEo-Uz-zw4"/>
+                <outlet property="image2" destination="0r3-D2-grp" id="WcF-M4-Sa3"/>
+                <outlet property="image3" destination="ypa-qb-ICs" id="Brj-RQ-kmV"/>
+                <outlet property="label1" destination="Mg5-DQ-vSZ" id="zeH-Nj-Kez"/>
+                <outlet property="label2" destination="TdA-3D-5Am" id="qrH-Av-EpC"/>
+                <outlet property="label3" destination="Gvy-Tx-PRn" id="DEW-IX-EKT"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="153.01339285714286"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="apply_hd" width="12" height="12"/>
+        <image name="apply_kb" width="12" height="12"/>
+        <image name="apply_pt" width="12" height="12"/>
+    </resources>
+</document>
